@@ -108,7 +108,6 @@ The application comes with pre-loaded sample conversations:
 
 - **Work Team** - Professional work discussions
 - **Family Group** - Personal family conversations  
-- **Project Alpha** - Project-specific discussions
 
 Each sample chat includes realistic messages with timestamps and different users.
 
@@ -132,63 +131,3 @@ The application uses React Context API for centralized state management:
 2. Context updates state
 3. Components re-render with new data
 4. UI reflects changes immediately
-
-## 🔧 Customization
-
-### Adding New Features
-- **User Authentication**: Integrate with auth providers
-- **Real-time Updates**: Add WebSocket connections
-- **File Sharing**: Implement file upload functionality
-- **Message Reactions**: Add emoji reactions to messages
-- **Group Chats**: Support multiple users per chat
-
-### Styling
-The application uses inline styles for simplicity. To customize:
-- Replace inline styles with CSS modules or styled-components
-- Update color schemes in the style objects
-- Modify layout dimensions and spacing
-
-### Backend Integration
-Currently uses mock data. To integrate with a backend:
-- Replace mock functions in `context.tsx` with API calls
-- Add error handling for network requests
-- Implement real-time updates with WebSockets
-
-## 🐛 Troubleshooting
-
-### Common Issues
-
-**ChatProvider not working**
-- Ensure the context file has `.tsx` extension
-- Check that all imports are correct
-- Verify TypeScript types are properly defined
-
-**Messages not displaying**
-- Check that the current chat is selected
-- Verify message filtering logic in ChatWindow
-- Ensure message data structure matches interface
-
-**Styling issues**
-- Check browser compatibility
-- Verify CSS properties are supported
-- Test on different screen sizes
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📞 Support
-
-For questions or support, please open an issue in the repository or contact the development team.
-
----
-
-**Built with ❤️ using React and TypeScript**
