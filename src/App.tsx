@@ -1,17 +1,18 @@
 import ChatList from "./components/ChatList"
 import ChatWindow from "./components/ChatWindow"
+import { ChatProvider } from "./storage/context"
 
-function App() {
-
+function App(){
   return (
-    <>
-    <div>Chat App</div>
-    <div>
-      <ChatList />
-      <ChatWindow />
-    </div>
-    </>
-    
+    <ChatProvider>
+      <div style={{ 
+        display: 'flex', 
+        height: '100vh',
+      }}>
+        <ChatList />
+        <ChatWindow />
+      </div>
+    </ChatProvider>
   )
 }
 
